@@ -1,4 +1,4 @@
-module Behaviouralflow_HA(Sum,carry,a,b);
+module Behaviouralflow_HA(Sum,Carry,a,b);
     input a,b;
     output reg Sum,Carry;
     always @(a,b)
