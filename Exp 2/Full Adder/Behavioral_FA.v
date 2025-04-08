@@ -4,6 +4,6 @@ module Behavioral_FA(Sum, Carry, a, b, cin);
 
     always @(*) begin
         Sum = a ^ b ^ cin;
-        Carry = (a & b) | (b & cin) | (a & cin);
+        Carry = (a & b) | ((a^b) & cin);
     end
 endmodule
